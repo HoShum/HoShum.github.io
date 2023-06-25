@@ -9,6 +9,8 @@
 * [后端技术栈](/backend/)
     * [Java](/backend/java/)
     * [Redis](/backend/redis/)
+        * [Redis设计与实现](/backend/redis/redis_design_impl/)
+            * [数据结构对象篇](/backend/redis/redis_design_impl/stru_obj.md)
     * [MQ](/backend/mq/)
     * [MySQL](/backend/mysql/)
 * [运维篇](/operations/)   
