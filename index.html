@@ -36,6 +36,18 @@
 		    subMaxLevel: 4,
 		    // 小屏设备下合并导航栏到侧边栏
 		    mergeNavbar: true,
+			// 图片居中
+			markdown: {
+				renderer: {
+					image: function(href, title, text) {
+						// 按照原来的渲染 img
+						var image_html = this.origin.image.apply(this, arguments)
+						// 用 figure 包一下图片，实现居中
+						return '<figure>' + image_html + '<figcaption>' + text +
+							'</figcaption></figure>'
+					}
+				}
+			}
 	    }
     </script>
     <script>
@@ -76,6 +88,12 @@
 	<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.js"></script>
+	<!-- 文本居中 -->
+	<style>
+		figure {
+			text-align: center
+		}
+	  </style>
 </body>
 
 	
