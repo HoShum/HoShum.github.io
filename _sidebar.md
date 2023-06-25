@@ -13,7 +13,7 @@
     * [MySQL](/backend/mysql/)
 * [计算机基础](/cs_base/)
 * [工具分享](/tools/)
-    * [Vim教程](/tools/learnvim)
+    * [Vim教程](/tools/learnvim.md)
 * [好文分享](/article/)
 * [业务分享](/business/)
 * [资源分享](/resource/)
