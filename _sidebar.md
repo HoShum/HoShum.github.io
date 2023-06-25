@@ -11,6 +11,8 @@
     * [Redis](/backend/redis/)
     * [MQ](/backend/mq/)
     * [MySQL](/backend/mysql/)
+* [运维篇](/operations/)   
+    * [排查生产环境CPU飙高问题](/operations/cpuspike.md)
 * [计算机基础](/cs_base/)
 * [工具分享](/tools/)
     * [Vim教程](/tools/learnvim.md)
