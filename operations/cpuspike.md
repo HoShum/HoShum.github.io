@@ -20,6 +20,7 @@
 使用命令：**printf “%x\n” pid **(printf “%x\n” 14380)
 
 `备注：pid指的是线程的pid，此处选了一个cpu和内存占用较高的pid做为演示`
+
 <img src="https://raw.githubusercontent.com/HoShum/HoShum.github.io/master/operations/imgs/image-20230625163118802.png" alt="image-20230625163118802" />
 
 
