@@ -13,8 +13,9 @@
 > systemd是Liunx的启动守护进程，已被大多数Liunx发行版所采用。相较于之前被采用的init进程串行启动，systemd进程采用并行启动且为系统启动管理提供了成套的方案。 
 
 1. 去到` /etc/systemd/system`文件夹，编写一个service文件， 例如hz.service
-
-   ![](https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/111.png)
+   <div align="left">
+    <img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/111.png" />
+   </div>
 
 2. 运行命令，重新加载Linux服务列表
 
@@ -38,7 +39,10 @@
 
 第二种方式是直接修改配置文件`/etc/rc.d/rc.local`中添加开机启动需要执行的命令
 
-![](https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/1687705299104.jpg))
+
+<div align="left">
+    <img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/1687705299104.jpg"/>
+   </div>
 
 最后修改rc.local的权限
 
@@ -51,8 +55,9 @@ chmod +x rc.local
 crontab是Linux的定时任务模块，但同样也可以编写开机启动的命令
 
 输入命令`crontab -e`打开当前用户的定时任务，添加如下内容
-
-![](https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/1687705561466.jpg)
+<div align="left">
+    <img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/1687705561466.jpg"/>
+   </div>
 
 保存后下次重启服务器便可以自动执行上面的命令
 
