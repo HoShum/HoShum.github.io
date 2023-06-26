@@ -11,6 +11,7 @@
     * [Redis](/backend/redis/)
         * [Redis设计与实现](/backend/redis/redis_design_impl/)
             * [数据结构对象篇](/backend/redis/redis_design_impl/stru_obj.md)
+        * [Redis缓存穿透、击穿和雪崩](/backend/redis/redis_cache_problem/redis_cache_through.md)
     * [MQ](/backend/mq/)
     * [MySQL](/backend/mysql/)
 * [运维篇](/operations/)   
