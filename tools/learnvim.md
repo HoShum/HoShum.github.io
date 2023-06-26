@@ -201,7 +201,7 @@ Vim的多文件操作比较特别，先来认识几个概念
 - Window是窗口，指Buffer可视化的分割区域
 - Tab可以用来组织窗口为一个工作区
 
-<img src="./imgs/image-20230123195755342-7661806.png" alt="image-20230123195755342" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932970.png" alt="image-20230123195755342" />
 
 **② Buffer切换**
 
@@ -218,7 +218,7 @@ Vim的多文件操作比较特别，先来认识几个概念
 - <control + w> s：进行水平分割；或者使用`:sp`
 - <control + w> v：进行垂直分割；或者使用`:vs`
 
-<img src="./imgs/image-20230123201159198-7661806.png" alt="image-20230123201159198" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932971.png" alt="image-20230123201159198" />
 
 - <control + w>w：在窗口间循环切换
 - <control + w>h：切换到左边的窗口；H：移动到左边
@@ -355,7 +355,7 @@ Vim复制或者删除后的内容并不是存放在系统剪贴板，而是“�
 
 **跳转快捷操作**
 
-<img src="./imgs/image-20230206104405207-1675651447587-1-7661806.png" alt="image-20230206104405207" style="zoom:60%;" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932972.png" alt="image-20230206104405207" style="zoom:60%;" />
 
 - 跳转：`<C-]>`
 - 回退：`<C-o>`
@@ -460,7 +460,7 @@ bashCopy code
 
 下面看一张图片了解配置文件
 
-<img src="./imgs/image-20230125184916930-7661806.png" alt="image-20230125184916930" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932973.png" alt="image-20230125184916930" style="zoom: 33%;" />
 
 ### 2、Vim映射
 
@@ -470,13 +470,13 @@ bashCopy code
 
 下面使用一些例子进行演示
 
-<img src="./imgs/image-20230204120514417-7661806.png" alt="image-20230204120514417" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932974.png" alt="image-20230204120514417" />
 
 如果要进行持久化只需要写进~/.vimrc文件，**注意**，不需要加`:`
 
 #### ② 常用模式下定义映射
 
-#### <img src="./imgs/image-20230204121716704-7661806.png" alt="image-20230204121716704" />
+#### <img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932976.png" alt="image-20230204121716704" />
 
 - `:imap <c-d> <Esc>ddi` 意思就是先进入普通模式再按dd再回到插入模式
 
@@ -488,11 +488,11 @@ bashCopy code
 
 #### ③ 非递归映射
 
-<img src="./imgs/image-20230204123007719-7661806.png" alt="image-20230204123007719" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932977.png" alt="image-20230204123007719" />
 
 **示例**
 
-![image-20230204124621874](./imgs/image-20230204124621874-7661806.png)
+![image-20230204124621874](https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932978.png)
 
 - `<leader>`表示前缀，用来方便定义映射
 - ``^`表示回到原本光标的位置
@@ -543,13 +543,13 @@ Plug 'mhinz/vim-startify'
 - 直接在Google搜索想要的插件，比如我想要Java相关的插件，则`vim java plugin`
 - 通过这个网站搜索：https://vimawesome.com
 
-<img src="./imgs/image-20230206010754981-7661806.png" alt="image-20230206010754981" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932979.png" alt="image-20230206010754981" />
 
 ### 4、Vim美化插件
 
 修改Vim外观
 
-<img src="./imgs/image-20230206011052301-7661806.png" alt="image-20230206011052301" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932980.png" alt="image-20230206011052301" />
 
 https://github.com/vim-airline/vim-airline
 
@@ -576,7 +576,7 @@ Plug 'Yggdroot/indentLine'
   - solarized配色：`github.com/altercation/vim-colors-solarized`
   - gruvbox配色：`github.com/morhetz/gruvbox`
 
-  <img src="./imgs/image-20230206012435054-7661806.png" alt="image-20230206012435054" style="zoom: 50%;" />
+  <img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932981.png" alt="image-20230206012435054" style="zoom: 50%;" />
 
   安装完插件后，可以执行以下命令更换主题：`:colorscheme hybird`
 
@@ -645,7 +645,7 @@ Plug 'tpope/vim-surround'
 
 #### ① 模糊搜索
 
-<img src="./imgs/image-20230207215046860-7661806.png" alt="image-20230207215046860" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932982.png" alt="image-20230207215046860" />
 
 > https://github.com/junegunn/fzf
 
@@ -713,7 +713,7 @@ VSCode Vim跟Idea不同，是需要在`setting.json`里面使用JSON的形式进
 
 同时VSCode官方已经提供了一部分插件使用，只需要手动选择开启或者关闭即可
 
-<img src="./imgs/image-20230623125356899-7661806.png" alt="image-20230623125356899" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932983.png" alt="image-20230623125356899" style="zoom: 33%;" />
 
 <center>VSCode Vim配置页面</center>
 
@@ -723,7 +723,7 @@ VSCode Vim跟Idea不同，是需要在`setting.json`里面使用JSON的形式进
 
 ### ① 安装插件
 
-<img src="./imgs/image-20230625103329375-7661806.png" alt="image-20230625103329375" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/HoShum/PictureRepo/main/imgs/202306251932984.png" alt="image-20230625103329375" style="zoom:50%;" />
 
 ### ② 打开`~./ideavimrc`文件
 
