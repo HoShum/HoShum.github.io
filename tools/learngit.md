@@ -257,7 +257,7 @@ Hello World!test master
 
 ### 3、合并分支原理
 
-![img](https://cdn.nlark.com/yuque/0/2023/png/27500701/1682875317936-b7e086c5-5732-4c0c-a4b4-d16d5aa38d23.png)
+![img](https://cdn.jsdelivr.net/gh/HoShum/PictureRepo/imgs/202306261211745.png)
 
 master、hot-fix 其实都是指向具体版本记录的指针。当前所在的分支，其实是由 **HEAD**决定的。**所以创建分支的本质就是多创建一个指针**。HEAD 如果指向 master，那么我们现在就在 master 分支上。HEAD 如果执行 hotfix，那么我们现在就在 hotfix 分支上。所以**切换分支的本质就是移动HEAD指针（包括合并分支其实也是分支切换）**。
 
@@ -273,7 +273,7 @@ clone与pull：clone是本来本地没有代码，因此需要从远程库拷贝
 
 ### 2、跨团队协作
 
-![img](https://cdn.nlark.com/yuque/0/2023/png/27500701/1682875340949-21f1b709-540c-42b9-879d-a6811cd6498c.png)
+![img](https://cdn.jsdelivr.net/gh/HoShum/PictureRepo/imgs/202306261202249.png)
 
 说明：远程库A复制代码给远程库B，然后对方本地库从远程库B克隆一份该代码，更新后再推送给远程库B，然后远程B把代码请求拉取到远程库A，经过审核后合并代码，然后本地库再从远程库A中拉取代码，实现代码更新
 
@@ -412,7 +412,7 @@ target
 
 新版Idea中的VCS看不到Import into Version Control，需要先到设置界面的Version Control下的Commit，取消勾选Use non-model commit interface，然后再到VCS中便可以看到Create Git Repository
 
-![img](https://cdn.nlark.com/yuque/0/2023/png/27500701/1682875366486-a170155b-9397-49df-bfcc-9f10e7f0c415.png)
+![img](https://cdn.jsdelivr.net/gh/HoShum/PictureRepo/imgs/202306261203291.png)
 
 ① 新建Git仓库后，会发现pom.xml文件**变红**（意味着未被追踪），同时去到项目所在目录可以看到一个.git目录（默认隐藏），同时顶端菜单栏会多出一个Git菜单
 
