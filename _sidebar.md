@@ -24,6 +24,7 @@
 * [工具分享](/tools/)
     * [Vim教程](/tools/learnvim.md)
     * [Git使用指南](/tools/learngit.md)
+    * [计算机英语](/tools/cs_english.md)
 * [好文分享](/article/)
 * [业务分享](/business/)
 * [资源分享](/resource/)
