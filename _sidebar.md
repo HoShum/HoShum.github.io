@@ -26,7 +26,8 @@
     * [Linux添加开启启动](/operations/startLinux.md)
     
 * [计算机基础](/cs_base/)
-    * [数据结构和算法](/cs_base/数据结构与算法/力扣刷题笔记/)
+    * [数据结构和算法](/cs_base/数据结构与算法/)
+        * [力扣刷题笔记](/cs_base/数据结构与算法/力扣刷题笔记/)
 
 * [工具分享](/tools/)
     * [Vim教程](/tools/learnvim.md)
