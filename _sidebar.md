@@ -30,15 +30,16 @@
 * [工具分享](/tools/)
     * [Vim教程](/tools/learnvim.md)
     * [Git使用指南](/tools/learngit.md)
-    * [计算机英语](/tools/cs_english.md)
+    * [计算机英语](/tools/learn_english.md)
     * [nrm管理npm镜像源](/tools/nrm.md)
     * [nvm管理node版本](/tools/nvm.md)
     * [Jmeter入门](/tools/jmeter_level1.md)
-    
-    
     
 * [好文分享](/article/)
 
 * [业务分享](/business/)
 
 * [资源分享](/resource/)
+
+* [代码分享](/code/)
+    * [字典翻译代码](/code/字典翻译.md)
