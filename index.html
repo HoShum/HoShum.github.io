@@ -49,7 +49,9 @@
 							'</figcaption></figure>'
 					}
 				}
-			}
+			},
+			// 启用相对路径
+  			relativePath: true,
 	    }
     </script>
     <script>
@@ -108,6 +110,10 @@
 	<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
 	<!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+	<!-- Latex支持 -->
+	<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
+
 	<!-- 文本居中 -->
 	<style>
 		figure {
