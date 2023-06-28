@@ -1,11 +1,14 @@
 <!-- 侧边栏（目录) -->
 * [首页](/)
+
 * [操作指南](/guide)
+
 * [前端技术栈](/frontend/)
     * [HTML](/frontend/html/)
     * [CSS](/frontend/css/)
     * [JS](/frontend/js/)
         * [JS快速入门笔记](/frontend/js/README.md)
+    
 * [后端技术栈](/backend/)
     * [Java](/backend/java/)
         * [Spring全家桶](/backend/java/spring/)
@@ -17,14 +20,28 @@
         * [Redis缓存穿透、击穿和雪崩](/backend/redis/redis_cache_problem/redis_cache_through.md)
     * [MQ](/backend/mq/)
     * [MySQL](/backend/mysql/)
+    
 * [运维篇](/operations/)   
     * [排查生产环境CPU飙高问题](/operations/cpuspike.md)
     * [Linux添加开启启动](/operations/startLinux.md)
+    
 * [计算机基础](/cs_base/)
+
 * [工具分享](/tools/)
     * [Vim教程](/tools/learnvim.md)
+    
     * [Git使用指南](/tools/learngit.md)
+    
     * [计算机英语](/tools/cs_english.md)
+    
+    * [nrm管理npm镜像源](/tools/nrm.md)
+    
+    * [nvm管理node版本](/tools/nvm.md)
+    
+    
+    
 * [好文分享](/article/)
+
 * [业务分享](/business/)
+
 * [资源分享](/resource/)
