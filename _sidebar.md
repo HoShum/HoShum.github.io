@@ -33,7 +33,7 @@
     * [计算机英语](/tools/cs_english.md)
     * [nrm管理npm镜像源](/tools/nrm.md)
     * [nvm管理node版本](/tools/nvm.md)
-    * [Jmter入门](/tools/Jmter_level1.md)
+    * [Jmeter入门](/tools/Jmeter_level1.md)
     
     
     

@@ -35,7 +35,7 @@ jmter是用java开发的测试工具，免费开源，轻量级，支持多协�
 
    打开`bin/jmeter.properties`，找到`sampleresult.default.encoding`的参数，修改该参数的值为`utf-8`
 
-   <img src="https://cdn.jsdelivr.net/gh/HoShum/PictureRepo/imgs/202306281142698.png"/>
+   <div align="center"><img src="https://cdn.jsdelivr.net/gh/HoShum/PictureRepo/imgs/202306281142698.png"/></div>
 
    
 
@@ -231,7 +231,7 @@ jmter是用java开发的测试工具，免费开源，轻量级，支持多协�
 
    ![image-20230628154452344](https://cdn.jsdelivr.net/gh/HoShum/PictureRepo/imgs/202306281544433.png)
 
-   > # Jmeter后置处理器之Json提取器：https://blog.csdn.net/weixin_44169484/article/details/104979985
+   > Jmeter后置处理器之Json提取器：https://blog.csdn.net/weixin_44169484/article/details/104979985
 
    2. 查看提取结果
 
