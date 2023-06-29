@@ -2,103 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Docsify-Guide</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Description">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- 设置浏览器图标 -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <!-- 默认主题 -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+	<meta charset="UTF-8">
+	<title>Docsify-Guide</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Description">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- 设置浏览器图标 -->
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<!-- 默认主题 -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+	<!-- 目录跳转样式 -->
+	<link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
+	<!-- GIF插件样式 -->
+	<link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">
+	<!-- 更新日志样式 -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/style.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<!-- 暗黑模式样式 -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
 </head>
 
 <body>
-    <!-- 定义加载时候的动作 -->
-    <div id="app">加载中...</div>
+	<!-- 自定义导航栏 -->
+	<nav>
+		<ul>
+			<ul>
+				<p><a href="/README.md">首页</a></p>
+			</ul>
+			<ul>
+				<p><a href="/guide.md">操作指南</a></p>
+			</ul>
+		</ul>
+	</nav>
+	<!-- 定义加载时候的动作 -->
+	<div id="app">加载中...</div>
 	<script src="https://wugenqiang.github.io/CS-Notes/plugin/jquery.js"></script>
 	<script src="https://wugenqiang.github.io/CS-Notes/plugin/jquery.goup.js"></script>
-		<script>
-	    window.$docsify = {
-		    // 项目名称
-		    name: '一个小小的知识库',
-		    // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
-		    repo: 'https://github.com/HoShum',
-		    // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
-		    loadSidebar: true,
-		    // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
-		    loadNavbar: true,
-		    // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
-		    coverpage: true,
-		    // 最大支持渲染的标题层级
-		    maxLevel: 5,
-		    // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
-		    subMaxLevel: 4,
-		    // 小屏设备下合并导航栏到侧边栏
-		    mergeNavbar: true,
-			// 图片居中
-			markdown: {
-				renderer: {
-					image: function(href, title, text) {
-						// 按照原来的渲染 img
-						var image_html = this.origin.image.apply(this, arguments)
-						// 用 figure 包一下图片，实现居中
-						return '<figure>' + image_html + '<figcaption>' + text +
-							'</figcaption></figure>'
-					}
-				}
-			},
-			// 启用相对路径
-  			relativePath: true,
-	    }
-    </script>
-    <script>
-	    // 搜索配置(url：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search)
-	    window.$docsify = {
-		    search: {
-			    maxAge: 86400000,// 过期时间，单位毫秒，默认一天
-			    paths: auto,// 注意：仅适用于 paths: 'auto' 模式
-			    placeholder: '搜索',
-			    // 支持本地化
-			    placeholder: {
-				    '/zh-cn/': '搜索',
-				    '/': 'Type to search'
-			    },
-			    noData: '找不到结果',
-			    depth: 4,
-			    hideOtherSidebarContent: false,
-			    namespace: 'Docsify-Guide',
-		    }
-	    }
-    </script>
 	<!-- 回到Top插件 -->
 	<script type="text/javascript">
 		$(document).ready(function () {
-		$.goup({
-			trigger: 100,
-			bottomOffset: 32,
-			locationOffset: 32,
-			title: 'TOP',
-			titleAsText: true
-		});
+			$.goup({
+				trigger: 100,
+				bottomOffset: 32,
+				locationOffset: 32,
+				title: 'TOP',
+				titleAsText: true
+			});
 		});
 	</script>
 
 	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
 	<!-- 侧边栏折叠插件 plugins -->
 	<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-    <!-- docsify的js依赖 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <!-- emoji表情支持 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
-    <!-- 图片放大缩小支持 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-    <!-- 搜索功能支持 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-    <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
-    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+	<!-- docsify的js依赖 -->
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+	<!-- emoji表情支持 -->
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+	<!-- 图片放大缩小支持 -->
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+	<!-- 搜索功能支持 -->
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+	<!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
+	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 	<!--插件：代码复制到剪贴板 -->
 	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 	<!-- 代码语法高亮 -->
@@ -109,19 +76,147 @@
 	<!-- CDN files for docsify-katex -->
 	<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
 	<!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
 	<!-- Latex支持 -->
 	<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
-
+	<!-- 字数插件 -->
+	<script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
+	<!-- GIF插件 -->
+	<script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>
 	<!-- 文本居中 -->
 	<style>
 		figure {
 			text-align: center
 		}
-	  </style>
+	</style>
+	<!-- GitHub上在线编辑插件 -->
+	<script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+	<!-- 嵌入PDF文件插件 -->
+	<!-- PDFObject.js is a required dependency of this plugin -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+	<!-- This is the source code of the pdf embed plugin -->
+	<script src="path-to-file/docsify-pdf-embed.js"></script>
+	<!-- 文本高亮插件 -->
+	<script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+	<!-- 目录跳转插件 -->
+	<script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+	<!-- 日志更新插件 -->
+	<script src="https://cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/index.js"></script>
+	<!-- 暗黑模式插件 -->
+	<script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+	<!-- Twitter Emoji插件 -->
+	<script src="//cdn.jsdelivr.net/gh/TaQini/docsify-twemoji@master/twemoji.min.js"></script>
+	<script>
+		window.$docsify = {
+			// 项目名称
+			name: '一个小小的知识库',
+			// 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
+			repo: 'https://github.com/HoShum',
+			// 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
+			loadSidebar: true,
+			// 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
+			loadNavbar: false,
+			// 日志更新，需要关闭导航栏支持
+			changelog: 'CHANGELOG.md', // path of your changelog, it can be remote as well
+			// 封面支持，默认加载的是项目根目录下的_coverpage.md文件
+			coverpage: true,
+			// 最大支持渲染的标题层级
+			maxLevel: 5,
+			// 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
+			subMaxLevel: 3,
+			// 小屏设备下合并导航栏到侧边栏
+			mergeNavbar: true,
+			// 图片居中
+			markdown: {
+				renderer: {
+					image: function (href, title, text) {
+						// 按照原来的渲染 img
+						var image_html = this.origin.image.apply(this, arguments)
+						// 用 figure 包一下图片，实现居中
+						return '<figure>' + image_html + '<figcaption>' + text +
+							'</figcaption></figure>'
+					}
+				}
+			},
+			// 启用相对路径
+			relativePath: true,
+			//字数插件
+			count: {
+				countable: true,
+				position: 'top',
+				margin: '10px',
+				float: 'right',
+				fontsize: '0.9em',
+				color: 'rgb(90,90,90)',
+				language: 'chinese',
+				localization: {
+					words: "",
+					minute: ""
+				},
+				isExpected: true
+			},
+			// 搜索配置(url：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search)
+			search: {
+				maxAge: 86400000,// 过期时间，单位毫秒，默认一天
+				paths: auto,// 注意：仅适用于 paths: 'auto' 模式
+				placeholder: '搜索',
+				// 支持本地化
+				placeholder: {
+					'/zh-cn/': '搜索',
+					'/': 'Type to search'
+				},
+				noData: '找不到结果',
+				depth: 4,
+				hideOtherSidebarContent: false,
+				namespace: 'Docsify-Guide',
+			},
+			// 文本高亮插件
+			'flexible-alerts': {
+				style: 'flat'
+			},
+			//目录跳转插件
+			toc: {
+				scope: '.markdown-section',
+				headings: 'h1, h2, h3, h4, h5, h6',
+				title: '大纲',
+			},
+			//暗黑亮色模式切换
+			darkMode: {
+				dark: {
+					background: "#1c2022",
+					toggleBtnBg: "#34495e",
+					textColor: "#b4b4b4"
+				},
+				light: {
+					background: "white",
+					toggleBtnBg: "var(--theme-color)",
+					textColor: "var(--theme-color)"
+				}
+			},
+			//GitHub上编辑
+			plugins: [
+				EditOnGithubPlugin.create(
+					'https://github.com/docsifyjs/docsify/blob/master/docs/',
+					null,
+					function (file) {
+						if (file.indexOf('en') === -1) {
+							return '编辑'
+						} else {
+							return 'edit on git'
+						}
+					}
+				)
+			],
+			function(hook, vm) {
+				// parse twemoji
+				hook.doneEach(function () {
+					twemoji.parse(document);
+				});
+			},
+		}
+	</script>
 </body>
 
-	
-</html>
 
+</html>
