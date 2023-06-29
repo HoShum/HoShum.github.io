@@ -13,7 +13,7 @@
     * [Java](/backend/java/)
         * [Spring全家桶](/backend/java/spring/)
             * [SpringFramework](/backend/java/spring/spring_framework/)
-                * [IOC](./ioc.md)
+                * [IOC](/backend/java/spring/spring_framework/ioc.md)
         * [多线程](/backend/java/multithreading/)
             * [completable教程](/backend/java/multithreading/completable_future.md)
     * [Redis](/backend/redis/)
