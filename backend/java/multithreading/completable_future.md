@@ -156,7 +156,8 @@ join()方法配合Stream流是这样用的：
                           e.getMessage();
                       }                        
                       return "结果" + key;                    
-                 }, executorService))                                 			  	                                         .map(CompletableFuture::join).collect(Collectors.toList());             
+                 }, executorService))                                 			  	                                         
+                 .map(CompletableFuture::join).collect(Collectors.toList());             
          executorService.shutdown();            
          // 3. 获取结果            
          System.out.println(results);            
@@ -227,15 +228,17 @@ public class ThreadDemo {
         // 2. 提交任务，并调用join()阻塞等待所有任务执行完成            
         CompletableFuture                    
             .allOf(                            
-            		list.stream().map(key ->                                    														CompletableFuture.runAsync(() -> {                                        
-                                // 睡眠一秒，模仿处理过程                                        
-                                try {                                            
-                                    Thread.sleep(1000L);                                        
-                                } catch (InterruptedException e) { 
-                                    e.getMessage();
-                                }                                        
-                                System.out.println("结果" + key);                                    
-                            }, executorService))                                    													.toArray(CompletableFuture[]::new))                    
+            		list.stream().map(key ->                                    														
+                        CompletableFuture.runAsync(() -> {                                        
+                            // 睡眠一秒，模仿处理过程                                        
+                            try {                                            
+                                Thread.sleep(1000L);                                        
+                            } catch (InterruptedException e) { 
+                                e.getMessage();
+                            }                                        
+                            System.out.println("结果" + key);                                    
+                        }, executorService))                                    													
+                        .toArray(CompletableFuture[]::new))                    
             .join();            
         executorService.shutdown();   
     }     
@@ -286,7 +289,8 @@ public class ThreadDemo {
                                e.getMessage();
                            }                                        
                            return "结果" + key;                                    
-                       }, executorService))                                    						                                .toArray(CompletableFuture[]::new));            
+                       }, executorService))                                    						                                
+                       .toArray(CompletableFuture[]::new));            
         executorService.shutdown();                
         // 3. 获取结果            
         System.out.println(completableFuture.join());        
@@ -422,8 +426,10 @@ get 阻塞等待，会抛异常
 ```java
  public class ThreadDemo {            
      public static void main(String[] args) {            
-         CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(() -> {                			System.out.println("1. 开始淘米");                                                                           return "2. 淘米完成";            
-                                                                                           		                       }).thenApplyAsync(result -> {               
+         CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(() -> {                			
+            System.out.println("1. 开始淘米");                                                                           
+            return "2. 淘米完成";                                                                                         		                       
+        }).thenApplyAsync(result -> {               
              System.out.println(result);                
              System.out.println("3. 开始煮饭");                
              // 生成一个1~10的随机数                
@@ -470,13 +476,15 @@ get 阻塞等待，会抛异常
 ```java
 public class ThreadDemo {            
     public static void main(String[] args) {            
-        CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(() -> {                				return "饭做好了";            
+        CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(() -> {                				
+            return "饭做好了";            
        });                        
         //try {            
         //    Thread.sleep(1L);            
         //} catch (InterruptedException e) {            
         //}                
-        completableFuture.complete("饭还没做好，我点外卖了");           				 				                 System.out.println(completableFuture.join());        
+        completableFuture.complete("饭还没做好，我点外卖了");           				 				                 
+        System.out.println(completableFuture.join());        
     }        
 } 
 输出结果：    
@@ -499,7 +507,8 @@ public class ThreadDemo {
             return "外卖到了";            
         });                
         // 饭先做好，就吃饭。外卖先到，就吃外卖。就是这么任性。            
-        CompletableFuture<String> completableFuture = meal.applyToEither(outMeal, myMeal -> {               			 return myMeal;            
+        CompletableFuture<String> completableFuture = meal.applyToEither(outMeal, myMeal -> {               			 
+            return myMeal;            
         });                
         System.out.println(completableFuture.join());        
     }        
