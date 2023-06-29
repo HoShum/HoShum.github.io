@@ -289,7 +289,7 @@ jmter是用java开发的测试工具，免费开源，轻量级，支持多协�
 
    语法：`${__property(nbook_id)}`
 
-   ![image-20230628161728894](C:/Users/ake/AppData/Roaming/Typora/typora-user-images/image-20230628161728894.png)
+   ![](https://cdn.jsdelivr.net/gh/HoShum/PictureRepo/imgs/202306291134657.png)
 
    至此，就可以实现跨线程组引用变量啦~~~
 
