@@ -13,9 +13,9 @@
     * [Java](/backend/java/)
         * [Spring全家桶](/backend/java/spring/)
             * [SpringFramework](/backend/java/spring/spring_framework/)
-                * [IOC](./ioc.md)
+                * [IOC](/backend/java/spring/spring_framework/ioc.md)
         * [多线程](/backend/java/multithreading/)
-            * [completable教程](/backend/java/multithreading/completable_future.md/)
+            * [completable教程](/backend/java/multithreading/completable_future.md)
     * [Redis](/backend/redis/)
         * [Redis设计与实现](/backend/redis/redis_design_impl/)
             * [数据结构对象篇](/backend/redis/redis_design_impl/stru_obj.md)
@@ -47,3 +47,4 @@
 
 * [代码分享](/code/)
     * [字典翻译代码](/code/字典翻译.md)
+    * [防重复提交](/code/防重复提交.md)
