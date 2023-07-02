@@ -40,6 +40,7 @@
     * [nrm管理npm镜像源](/tools/nrm.md)
     * [nvm管理node版本](/tools/nvm.md)
     * [Jmeter入门](/tools/jmeter_level1.md)
+    * [MinIO学习笔记](/tools/MinIO使用教程.md)
     
 * [好文分享](/article/)
 
