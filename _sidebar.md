@@ -22,6 +22,9 @@
         * [Redis缓存穿透、击穿和雪崩](/backend/redis/redis_cache_problem/redis_cache_through.md)
     * [MQ](/backend/mq/)
     * [MySQL](/backend/mysql/)
+
+* [架构思维篇](/design/)
+    * [设计模式](/design/pattern/guide.md)
     
 * [运维篇](/operations/)   
     * [排查生产环境CPU飙高问题](/operations/cpuspike.md)
