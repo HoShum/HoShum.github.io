@@ -35,7 +35,7 @@
         * [力扣刷题笔记](/cs_base/数据结构与算法/力扣刷题笔记/)
     * [操作系统](/cs_base/操作系统)
         * [操作系统导论学习笔记](/cs_base/操作系统/操作系统导论学习笔记/概述.md)
-    * [汇编语言](/cs_base/asm/)
+    * [汇编语言](/cs_base/汇编语言/guide.md)
 * [工具分享](/tools/)
     * [Vim教程](/tools/learnvim.md)
     * [Git使用指南](/tools/learngit.md)
