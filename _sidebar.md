@@ -21,7 +21,7 @@
             * [数据结构对象篇](/backend/redis/redis_design_impl/stru_obj.md)
         * [Redis缓存穿透、击穿和雪崩](/backend/redis/redis_cache_problem/redis_cache_through.md)
     * [MQ](/backend/mq/)
-    * [MySQL](/backend/mysql/)
+    * [MySQL](/backend/mysql/guide.md)
 
 * [架构思维篇](/design/)
     * [设计模式](/design/pattern/guide.md)
